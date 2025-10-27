@@ -1,0 +1,25 @@
+sort=-time 
+layer=overlay
+anchor=top-right
+max-icon-size=64
+
+
+
+font=Maple Mono NF CN Bold
+background-color=#181926
+text-color=#cad3f5
+width=350
+padding=10
+border-size=2
+border-color=#8aadf4
+border-radius=0
+default-timeout=5000
+group-by=summary
+
+[urgency=critical]
+border-color=#ed8796
+font=Maple Mono NF CN Italic ExtraBold
+default-timeout=0
+
+[grouped]
+format=<b>%s</b>\n%b
