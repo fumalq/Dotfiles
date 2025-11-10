@@ -13,7 +13,6 @@
     "cpu",
     "memory",
     "disk",
-    "temperature",
     "hyprland/window"
   ],
   "modules-center": [
@@ -29,7 +28,7 @@
   /* === Modules Left === */
   "custom/archicon": {
     "format": "",
-    "on-click": "rofi -show drun",
+    "on-click": "bash /home/mamutsss/.config/rofi/scripts/power-menu.sh",
     "tooltip": false
   },
   "clock": {
@@ -67,8 +66,8 @@
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
-      "default": "□",
-      "active": "■"
+      "default": "[ ]",/*"□",*/
+      "active": "[#]"/*"■"*/
     },
     "persistent-workspaces": {
       "*": 2
@@ -92,7 +91,7 @@
   "pulseaudio_slider": {
     "format": "{volume}%",
     "tooltip": false,
-    "on-click": "pavucontrol"
+    "on-click": "pwvucontrol"
   },
   "pulseaudio": {
     "format": "{volume}% {icon}",

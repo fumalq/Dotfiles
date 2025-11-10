@@ -34,28 +34,6 @@ window#waybar.hidden {
   transition: none;
 }
 
-/* Separation to the left */
-/*
-#custom-archicon,
-#cpu,
-#idle_inhibitor {
-  margin-left: 5px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-*/
-
-/* Separation to the rigth */
-/*
-#clock,
-#temperature,
-#language {
-  margin-right: 5px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-*/
-
 /* -- Specific styles -- */
 
 /* Modules left */
@@ -82,10 +60,6 @@ window#waybar.hidden {
   background: #F5C2E7;
 }
 
-#temperature {
-  background: #F8BD96;
-}
-
 /* Modules center */
 #window {
   background: #eed49f;
@@ -100,6 +74,7 @@ window#waybar.hidden {
   margin: 6px 5px;
 }
 
+
 #taskbar button {
   padding: 0px 5px;
   margin: 0px 3px;
@@ -113,11 +88,6 @@ window#waybar.hidden {
 
 #taskbar button:hover {
   background: rgba(34, 36, 54, 0.5);
-}
-
-#idle_inhibitor {
-  background: #B5E8E0;
-  padding-right: 15px;
 }
 
 #pulseaudio {
@@ -143,15 +113,17 @@ window#waybar.hidden {
   background: #8aadf4;
   border-radius: 0px;
   /*margin: 6px 5px;*/
-  padding: 0px 6px;
+  padding: 0px 0px;
 }
+
 
 #workspaces button {
   color: #181926;
-  background: transparent;
+ /* background: transparent; */
   padding: 4px 4px;
-  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
-}
+ /*transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+*/
+ }
 
 #workspaces button.occupied {
   color: #181926;
@@ -164,6 +136,7 @@ window#waybar.hidden {
 
 #workspaces button:hover {
   color: #89B4FA;
+  border-radius: 0px;
 }
 
 #workspaces button.active:hover {}
