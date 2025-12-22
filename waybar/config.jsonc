@@ -14,7 +14,7 @@
     "cpu",
     "memory",
     "disk",
-    "hyprland/window"
+    "niri/window"
   ],
 
   "modules-center": [
@@ -26,7 +26,7 @@
     "pulseaudio",
     "network",
     "tray",
-    "hyprland/workspaces"
+    "niri/workspaces"
   ],
 
   /* === Modules Left === */
@@ -63,7 +63,7 @@
   },
 
   /* === Modules Center === */
-  "hyprland/workspaces": {
+  "niri/workspaces": {
     "format": "{icon}",
     "on-scroll-up": "hyprctl dispatch workspace e-1",
     "on-scroll-down": "hyprctl dispatch workspace e+1",

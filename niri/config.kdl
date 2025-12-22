@@ -21,6 +21,10 @@ cursor {
 
 }
 
+xwayland-satellite {
+  //off
+}
+
 input {
     keyboard {
         xkb {
@@ -84,11 +88,11 @@ input {
     focus-follows-mouse
 }
 
-output "HDMI-A-1" {
-    mode "1920x1080@75.000"
+output "HDMI-A-2" {
+    mode "1920x1080@144.000"
     //缩放倍率
     scale 1
-
+    variable-refresh-rate
     transform "normal"
     position x=0 y=0
 
@@ -171,8 +175,7 @@ spawn-at-startup "mako"
 spawn-sh-at-startup "udiskie"
 
 hotkey-overlay {
-    // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+    skip-at-startup
 }
 
 prefer-no-csd
@@ -200,14 +203,23 @@ window-rule {
 window-rule {
     match title="Open Files"
     focus-ring {
-      off
-      width 0
+    off
+    width 0
     }
 }
 
 window-rule {
-    match app-id="fuzzel"
+    match title="Friends List"
+    //default-window-height {fixed 1080;}
+    default-column-width  {fixed 400;}
+    //open-floating  true
   }
+
+window-rule {
+    match title="Steam"
+    default-column-width  {fixed 1720;}
+    //default-window-height {fixed 1080;}
+}
 
 //END
 
